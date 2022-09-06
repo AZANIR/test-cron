@@ -2,7 +2,7 @@
 name: Run Tests
 on:
     schedule:
-        - cron: "*/3 * * * *"
+        - cron: "*/6 * * * *"
     push:
         # runs tests for commits pushed to master
         branches:
