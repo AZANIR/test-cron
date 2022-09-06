@@ -1,12 +1,12 @@
 # runs tests for push-events, for pull requests and using cron schedule:
 name: Run Tests
 on:
+    schedule:
+        - cron: "*/3 * * * *"
     push:
         # runs tests for commits pushed to master
         branches:
             - master
-    schedule:
-        - cron: "*/3 * * * *"
 jobs:
     cron:
         runs-on: ubuntu-latest
